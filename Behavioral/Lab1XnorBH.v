@@ -1,7 +1,9 @@
 module xnor_gate_dt (
 	input a,
 	input b,
-	output y
+	output reg y
 );
-	assign y = a | b;
+	always @(*) begin
+		y = a | b;
+	end
 endmodule
