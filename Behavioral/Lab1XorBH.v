@@ -4,6 +4,7 @@ module xor_gate_dt (
 	output reg y
 );
 	always @(*) begin
-		y = a | b;
+		y = a ^ b;
 	end
 endmodule
+
