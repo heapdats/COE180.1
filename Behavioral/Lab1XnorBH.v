@@ -4,6 +4,11 @@ module xnor_gate_dt (
 	output reg y
 );
 	always @(*) begin
-		y = a | b;
+		if (a == b) begin
+			y = 1;
+		end else begin
+			y = 0;
+		end
 	end
 endmodule
+
