@@ -4,7 +4,8 @@ module or_gate_dt (
 	output reg y
 );
 	always @(*) begin
-		assign y = a | b;
+		y = a | b;
 	end
 endmodule
+
 
