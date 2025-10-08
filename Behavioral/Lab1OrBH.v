@@ -3,5 +3,7 @@ module or_gate_dt (
 	input b,
 	output y
 );
-	assign y = a | b;
+	always @(*) begin
+		assign y = a | b;
+	end
 endmodule
