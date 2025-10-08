@@ -3,5 +3,6 @@ module xnor_gate_dt (
 	input b,
 	output y
 );
-	assign y = a | b;
+	assign y = ~(a ^ b);
+
 endmodule
