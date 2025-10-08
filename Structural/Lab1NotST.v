@@ -1,6 +1,13 @@
-module not_gate_dt (
-	input a,
-	output y
+module not_gate_st (
+    input a,
+    output y
 );
-	assign y = ~a;
+
+    // Instantiate a NAND gate and tie both inputs to 'a'
+    nand_gate_df nand1 (
+        .a(a),
+        .b(a),
+        .y(y)
+    );
+
 endmodule
