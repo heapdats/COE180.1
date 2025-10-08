@@ -1,6 +1,8 @@
 module not_gate_dt (
 	input a,
-	output y
+	output reg y
 );
-	assign y = ~a;
+	always @(*) begin
+		y = ~a;
+	end
 endmodule
